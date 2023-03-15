@@ -1,0 +1,361 @@
+@charset "utf-8";
+@import url("webfonts/Vollkorn_Italic/stylesheet.css");
+@import url("webfonts/DancingScript_Regular/stylesheet.css");
+@import url("webfonts/Vollkorn_Bold/stylesheet.css");
+@import url("webfonts/Vollkorn_Regular/stylesheet.css");
+@import url("webfonts/DancingScript_Bold/stylesheet.css");
+@import url("webfonts/Vollkorn_BoldItalic/stylesheet.css");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.w1305 {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width:460px) {
+  .w1305 {
+    max-width: 414px;
+    flex-wrap: wrap;
+  }
+  #header .top {
+    height: 73px;
+    justify-content: center !important;
+    align-items: center;
+  }
+  #header .top .menu {
+    background-color: transparent !important;
+    text-align: center;
+  }
+  #main .a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #main .a .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  #main .b {
+    display: none;
+  }
+  #main .c {
+    flex: 1;
+  }
+  .imglist div {
+    font-size: 1.5em !important;
+  }
+  .test {
+    flex-direction: column;
+  }
+  .test .l {
+    width: 100% !important;
+    order: 2;
+  }
+  .test .r {
+    width: 100% !important;
+    flex-direction: row !important;
+  }
+  .test .r img {
+    width: 50%!important;
+  }
+	.test .r img:nth-child(1){
+		padding: 0 10px 0 0 ;
+		margin: 0!important;
+	}
+  #main .d {
+    display: none;
+  }
+}
+@media (min-width:461px) and (max-width:650px) {
+  .w1305 {
+    max-width: 585px;
+    flex-wrap: wrap;
+  }
+  #main .a {
+    width: 100%;
+    display: flex;
+  }
+  #main .a .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+  }
+  #main .a .navbar li {
+    padding: 0
+  }
+  #main .b {
+    width: 24.9573%;
+  }
+  #main .c {
+    width: 75.0427%;
+  }
+  .imglist div {
+    font-size: 1.5em !important;
+  }
+  .test .l {
+    width: 70% !important;
+  }
+  #main .d {
+    display: none;
+  }
+}
+@media (min-width:651px) and (max-width:950px) {
+  .w1305 {
+    max-width: 855px;
+  }
+  #main .a {
+    width: 16.6082%;
+  }
+  #main .b {
+    width: 20.8187%;
+  }
+  #main .c {
+    flex: 1;
+  }
+  #main .d {
+    display: none;
+  }
+}
+@media (min-width:951px) and (max-width:1250px) {
+  .w1305 {
+    max-width: 1125px;
+  }
+  #main .a {
+    width: 10.04444%;
+  }
+  #main .b {
+    width: 15.0222%;
+  }
+  #main .c {
+    width: 61.6%;
+  }
+  #main .d {
+    flex: 1;
+  }
+  .d .flex img {
+    width: 100% !important;
+  }
+}
+@media (min-width:1251px) {
+  .w1305 {
+    max-width: 1305px;
+  }
+  #main .a {
+    width: 8.659%;
+  }
+  #main .b {
+    width: 15.3256%;
+  }
+  #main .c {
+    width: 53.0268%;
+  }
+  #main .d {
+    flex: 1;
+  }
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.flex {
+  display: flex;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn Regular";
+  font-size: 12px;
+}
+#header {
+  background-image: -webkit-linear-gradient(270deg, rgba(250, 239, 202, 1.00) 0%, rgba(250, 226, 143, 1.00) 100%);
+  background-image: -moz-linear-gradient(270deg, rgba(250, 239, 202, 1.00) 0%, rgba(250, 226, 143, 1.00) 100%);
+  background-image: -o-linear-gradient(270deg, rgba(250, 239, 202, 1.00) 0%, rgba(250, 226, 143, 1.00) 100%);
+  background-image: linear-gradient(180deg, rgba(250, 239, 202, 1.00) 0%, rgba(250, 226, 143, 1.00) 100%);
+  padding-bottom: 70px;
+}
+#header .top {
+  height: 73px;
+  justify-content: flex-end;
+  /* [disabled]align-items: flex-start; */
+}
+#header .top .menu {
+  background-color: #ccc;
+  height: 25px;
+  width: 300px;
+  padding-left: 5px;
+  font-size: 12px;
+}
+#main {
+  background-color: #FFFFFF;
+}
+#main .a {
+  background-color: #ffdd00;
+}
+#main .a .logo {
+  font-family: "DancingScript Regular";
+  font-size: 25px;
+}
+#main .a .navbar, .subnav {
+  padding: 0;
+  margin: 0;
+}
+.navbar li, .subnav li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+.navbar li a, .subnav li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.30);
+}
+.title {
+  font-family: "DancingScript Regular";
+}
+.check_in {
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  padding-left: 5px;
+}
+.check_in h3 {
+  font-family: "DancingScript Regular";
+  font-size: 14px;
+}
+.check_in p {}
+.map {}
+.map h3 {
+  font-size: 14px;
+  font-family: "DancingScript Regular";
+}
+.map img {
+  width: 100%;
+}
+.imglist {}
+.imglist div {
+  height: 300px;
+  flex: 1;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1.00);
+  font-family: "Vollkorn Bold";
+  padding-left: 10px;
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 30px;
+}
+.imglist div:nth-child(1) {
+  background-image: url(img/5016.png);
+  background-size: auto 100%;
+  background-position: center 0%;
+  filter: grayscale(100%);
+}
+.imglist div:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(img/5015.png);
+  background-size: auto 100%;
+  background-position: center 0%;
+  filter: grayscale(100%);
+}
+.imglist div:nth-child(3) {
+  background-image: url(img/5040.png);
+  background-size: auto 100%;
+  background-position: center 0%;
+  filter: grayscale(100%);
+}
+.photo {
+  width: 100%;
+  height: 335px;
+  background-color: #E4F8FF;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+}
+.banner {
+  height: 200px;
+  width: 100%;
+  background-image: url(img/5018.png);
+  background-size: 100% auto;
+  background-position: 0% center;
+  color: rgba(255, 255, 255, 1.00);
+  font-family: "Vollkorn Bold";
+  padding-left: 15px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+}
+.test {}
+.test .l {
+  width: 42.8571%;
+  padding-right: 25px;
+}
+.test.flex .l div {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-left: 3px solid #ffdd00;
+  padding-left: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.test .r {
+  flex: 1;
+  flex-direction: column;
+}
+.test.flex .r img {
+  width: 100%;
+}
+.test.flex .r img:nth-child(1) {
+  margin-bottom: 5px;
+}
+#main .d {
+  background-color: #efefef;
+}
+#main .d div {
+  flex-wrap: wrap;
+}
+.d .flex img {
+  width: 50%;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  height: 0%;
+}
+.d p {
+  color: #808080;
+  transform: scale(0.9);
+}
+#footer {
+  background-image: -webkit-linear-gradient(270deg, rgba(205, 205, 205, 1.00) 0%, rgba(240, 240, 240, 1.00) 33.68%, rgba(255, 255, 255, 1.00) 100%);
+  background-image: -moz-linear-gradient(270deg, rgba(205, 205, 205, 1.00) 0%, rgba(240, 240, 240, 1.00) 33.68%, rgba(255, 255, 255, 1.00) 100%);
+  background-image: -o-linear-gradient(270deg, rgba(205, 205, 205, 1.00) 0%, rgba(240, 240, 240, 1.00) 33.68%, rgba(255, 255, 255, 1.00) 100%);
+  background-image: linear-gradient(180deg, rgba(205, 205, 205, 1.00) 0%, rgba(240, 240, 240, 1.00) 33.68%, rgba(255, 255, 255, 1.00) 100%);
+  height: 100px;
+}
+#footer .w1305 {
+  padding-top: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#footer .w1305 h3 {
+  font-family: "DancingScript Regular";
+}
+#footer .w1305 .contact {}
+#footer .w1305 .footer {}
+#footer .w1305 .Subscribe {}
+#footer .w1305 .group {}
+.w1305 .group .icon {
+  flex-wrap: wrap;
+}
+.group .icon.flex img {
+  width: 33.33%;
+  padding-right: 10px;
+  padding-bottom: 1px;
+}
+#footer .w1305 .copyright {
+  width: 100%;
+  padding-bottom: 60px;
+}
