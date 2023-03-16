@@ -1,0 +1,131 @@
+/* ------------全局属性------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "华文细黑";
+}
+
+.hide {
+    opacity: 0;
+    /* 透明度为0 */
+    pointer-events: none;
+    /* 不被鼠标触发  */
+}
+
+/* ------------布局与定位------------- */
+.flex {
+    display: flex;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.p-5 {
+    padding: 5em !important;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* ------------CSS动画------------- */
+@keyframes bg-scroll {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -1920px;
+    }
+}
+
+
+/* ------------游戏界面------------- */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/background-1.jpg);
+    background-size: cover;
+    animation: bg-scroll 20s linear infinite;
+    /*
+      bg-scroll: 调用关键帧动画
+      20s : 动画运行时长20秒
+       linear : 动画缓动方式 为均速运动
+       infinite : 动画重复次数，无限重复
+      */
+}
+
+/* ------------游戏开始界面------------- */
+#main {
+    width: 1024px;
+    height: 768px;
+    /*background-color: gold;*/
+}
+
+#game-start {
+    background: url(./images/spaceship_reference.jpg) center/cover no-repeat;
+}
+
+.text-area {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.logo {
+    width: 200px;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%);
+}
+
+.text-area > p {
+    line-height: 30px;
+    /*font-weight: bold;*/
+}
+
+.text-area > p:first-child {
+    text-align: center;
+    color: #d91f06;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.text-area > button {
+    background: orange;
+    color: white;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ------------游戏运行界面------------- */
+#game-running {
+}
+
+/* ------------游戏排名界面------------- */
+#game-ranking
+

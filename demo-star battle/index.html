@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Battle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="JQuery/jquery-ui-1.12.1/jquery-ui.css" />
+    <!-- 加载css -->
+    <script src="JQuery/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script>
+    <!-- 加载js -->
+</head>
+
+<body class="flex jc-c ai-c ">
+    <main id="main" class=" position-relative">
+        <div id="game-start" class="position-absolute w100 h100 p-5">
+            <div class="text-area w100 h100 position-relative">
+                <p>How to Play Star Battle.</p>
+                <p>1. Move the spaceship using the sensible areas in the screen;</p>
+                <p>2. The timer present the time lapsed;</p>
+                <p>3. The fuel counter show the remain fuel;</p>
+                <p>4. During the flight, the spaceship needs to destroy the asteroids and enemy spaceships that are presented in the space;</p>
+                <p>5. You can shoot pressing Space Bar;</p>
+                <p>6. If the spaceship hits a asteroid or another spaceship, you lose 15 points of fuel;</p>
+                <p>7. Enemy spaceship needs 1 shot to be destroyed, you will get 5 points for each enemy destroyed;</p>
+                <p>8. Asteroid needs 2 shots to be destroyed, you will get 10 points for each asteroid destroyed;</p>
+                <p>9. If you destroy a friendly spaceship, you lose 10 points;</p>
+                <p>10. During the flight, the spaceship needs to collect fuel in the space;</p>
+                <p>11. You can pause the game clicking in a button pause, or pressing the letter "p";</p>
+                <p>12. Go beyond all limits;</p>
+                <p>Battle in Space with Star Battle Championship...</p>
+                <button class="position-absolute">Start Game</button>
+                <img src="./images/logo-02.png" alt="" class="logo position-absolute">
+            </div>
+        </div>
+        <!-- 游戏开始界面 -->
+        <div id="game-running" class="position-absolute  w100 h100 hide"></div>
+        <!-- 游戏运行界面 -->
+        <div id="game-ranking" class="position-absolute w100 h100 hide"></div>
+        <!-- 游戏排名界面 -->
+    </main>
+</body>
+
+</html>
